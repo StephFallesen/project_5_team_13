@@ -281,7 +281,7 @@ nav .fa {
 footer {
 background-color: var(--beige);
 font-family:"Proxima Nova Alt", Sans-serif;
-color: white;
+color: var(--sort);
 text-align: left;
 }
 
