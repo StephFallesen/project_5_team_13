@@ -220,3 +220,9 @@ nav .fa {
     font-size: 15px;
   }
 }
+footer {
+  background-color: #05454E;
+  font-family:"Proxima Nova Alt", Sans-serif;
+  color: white;
+  text-align: left;
+}
