@@ -7,7 +7,7 @@ html {
   --grå: #2e2e2e;
   --rød: #c35146;
   --brun: #d7924f;
-  --orange: #feede5;
+  --orange: #de956a;
   --beige: #f6cd97;
   --sort: #393939;
   --egg: #ffedd5;
@@ -20,13 +20,13 @@ nav {
   padding: 2% 6%;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--orange);
+  width: 100%;
 }
 
 nav img {
   display: flex;
-  width: 20rem;
-  margin-left: 2rem;
-  margin-top: 1rem;
+  width: 3rem;
   align-items: center;
 }
 
@@ -43,7 +43,7 @@ nav img {
 }
 
 .nav-links ul li a {
-  color: #eae2b6;
+  color: var(--hvid);
   text-decoration: none;
   font-size: 20px;
 }
