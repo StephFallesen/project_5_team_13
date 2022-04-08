@@ -19,15 +19,16 @@ nav {
   display: flex;
   border-radius: 25px;
   justify-content: space-between;
-  align-items: center;
   background-color: var(--orange);
   width: 80%;
+  align-items: baseline;
+
 }
 
 nav img {
   display: flex;
   width: 3rem;
-  align-items: center;
+  align-items: baseline;
 }
 
 .nav-links {
@@ -38,7 +39,7 @@ nav img {
 .nav-links ul li {
   list-style: none;
   display: inline-block;
-  padding: 8px 20px;
+  padding: 0px 20px;
   position: relative;
 }
 
@@ -46,6 +47,7 @@ nav img {
   color: var(--hvid);
   text-decoration: none;
   font-size: 20px;
+  align-items: baseline;
 }
 
 .nav-links ul li::after {
