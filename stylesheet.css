@@ -1,6 +1,20 @@
 html {
     font-family: "Poppins", sans-serif;
 }
+
+:root {
+  --hvid: #ffffff;
+  --grå: #2e2e2e;
+  --rød: #c35146;
+  --brun: #d7924f;
+  --orange: #feede5;
+  --beige: #f6cd97;
+  --sort: #393939;
+  --egg: #ffedd5;
+
+  /* skrives: var(--farve); */
+}
+
 nav {
   display: flex;
   padding: 2% 6%;
