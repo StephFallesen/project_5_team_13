@@ -289,7 +289,9 @@ font-family:"Proxima Nova Alt", Sans-serif;
 color: var(--sort);
 text-align: left;
 }
-
+footer img {
+  width: 3rem;
+}
 
 
 
