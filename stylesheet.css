@@ -284,10 +284,14 @@ nav .fa {
 /* Peter */
 
 footer {
-background-color: var(--beige);
-font-family:"Proxima Nova Alt", Sans-serif;
-color: var(--sort);
-text-align: left;
+  display: grid;
+  background-color: var(--beige);
+  font-family:"Proxima Nova Alt", Sans-serif;
+  color: var(--sort);
+  text-align: left;
+  grid-column: 1fr 1fr 1fr;
+  grid-row: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 footer img {
   width: 3rem;
