@@ -279,7 +279,7 @@ nav .fa {
 /* Peter */
 
 footer {
-background-color: #05454E;
+background-color: var(--beige);
 font-family:"Proxima Nova Alt", Sans-serif;
 color: white;
 text-align: left;
