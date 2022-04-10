@@ -120,6 +120,57 @@ nav .fa {
  display:block;
 }
 
+.button  {
+  background-color: var(--brun);
+  align-items: center;
+  color: #eee;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 12px;
+  width: auto;
+}
+
+
+.button :hover {
+   background-color: var(--orange);
+   width: auto;
+}
+
+.carousel-container {
+  width: 60%;
+  margin: auto;
+  overflow: hidden;
+position: relative;
+  }
+
+.carousel-slide {
+  display: flex;
+width: 100%;
+height: 500px;
+
+}
+
+#prevbutton{
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 5%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+
+}
+
+#nextbutton{
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 5%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+
+}
 
 
 
