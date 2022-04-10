@@ -114,7 +114,11 @@ nav .fa {
 
 
 /* Caro */
-
+.centerImage
+{
+ text-align:center;
+ display:block;
+}
 
 
 
