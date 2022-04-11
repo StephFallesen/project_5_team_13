@@ -38,12 +38,15 @@ h3{
 
 nav {
   display: flex;
+  position: fixed;
   border-radius: 0 0 30px 30px;
   justify-content: space-between;
   background-color: var(--orange);
   width: 80%;
   align-items: flex-start;
-  margin-left: 10%;
+  margin-left: 9.2%;
+  margin-top: 0;
+  z-index: 10;
 }
 
 nav ul {
@@ -223,6 +226,112 @@ nav .fa {
     line-height: 40px;
   }
 }
+/* Landing */
+
+.stephLanding {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  height: 80vh;
+  background: var(--egg);
+  border-radius: 10px;
+  margin-bottom: 2%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.stephIndhold {
+  padding-top: 100px;
+}
+.stephIndhold h1, h2{
+  text-align: left;
+  padding-left: 10%;
+}
+
+/* Bog */
+
+body .book {
+    width: 100%;
+    height: 10em;
+    display: flex;
+    perspective: 2790px;
+}
+.book{
+  display: flex;
+  margin-left: 40rem;
+  position: relative;
+  align-items: center;
+
+}
+.front,.back{
+    position: absolute;
+    height: 28em;
+    width: 20.5em;
+    transform-origin: left center;
+    transition: transform .5s ease-in-out , box-shadow .4s ease-in-out;
+    border-radius: 0px 20px 20px 0px;
+}
+.front, .back{
+
+       background: linear-gradient(to right, var(--rød), var(--brun));
+}
+span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
+  background: #f7f9fc;
+  position: absolute;
+    height: 28em;
+    width: 20em;
+    transform-origin: left center;
+    transition: transform .5s ease-in-out , box-shadow .4s ease-in-out;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.book:hover .front{
+    transform: rotateY(-145deg);
+      box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+.book:hover .fpage{
+  transform: rotateY(-125deg);
+      box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
+  z-index:1;
+}
+.book:hover .spage{
+  transform: rotateY(-115deg);
+      box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
+  z-index:1;
+}
+.book:hover .spage p {
+  transform: rotateY(175deg);
+  font-size: 35px;
+  font-weight: 600;
+  color: var(--sort);
+  padding-left: 50px;
+}
+.book:hover .gpage{
+  transform: rotateY(-135deg);
+
+     box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
+}
+.book:hover .mpage{
+  transform: rotateY(-60deg);
+     box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
+}
+.book:hover .tpage{
+    transform: rotateY(-40deg) ;
+      box-shadow: 0  0 1em 0  rgba(0, 0, 0, .2);
+
+}
+.book:hover .epage{
+    transform: rotateY(-50deg);
+      box-shadow: 0 0 1em 0 rgba(0, 0, 0, .2);
+}
+
+
+.book:hover .back{
+    transform: rotateY(-30deg);
+      box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  z-index:-1;
+}
+
+/* 3 bokse */
 
 .row {
   margin-top: 5%;
@@ -232,7 +341,7 @@ nav .fa {
 
 .course-col {
   flex-basis: 30%;
-  height: 500px;
+  height: 60vh;
   background: var(--egg);
   border-radius: 10px;
   margin-bottom: 2%;
@@ -290,15 +399,155 @@ nav .fa {
 
 /* Jeanett */
 
+.jflex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: normal;
+    align-content: stretch;
+  }
+
+  .jflex-items1:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    width: 50%;
+  }
+
+  .jflex-items2:nth-child(2) {
+    display: block;
+    height: 100%;
+    background: var(--egg);
+    border-radius: 10px;
+    margin-bottom: 2%;
+    padding: 20px;
+  }
 
 
+/* TIMELINE */
 
+  .timeline {
+    margin-top: 35px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 40% auto;
+    justify-content: center;
+  }
 
+  .jul {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+  .jli {
+    margin-top: 30px;
+    position: relative;
+    padding: 25px;
+  }
+  .jli p {
+    padding: 0 20px;
+    transition: 1.5s;
+  }
 
+  .date {
+    position: absolute;
 
+    top: 30px;
+    left: -50px;
+    opacity: 0;
+    transition: 1.5s;
+    font-size: 12px;
+  }
+  .timeline-line {
+    background: rgb(228, 228, 228);
+    width: 4px;
+    border-radius: 12px;
+    position: relative;
+    justify-self: end;
+  }
 
+  .timeline-point {
+    border: none;
+    position: absolute;
+    border-radius: 50%;
+    background: rgb(228, 228, 228);
+    width: 8px;
+    height: 8px;
+    top: 30px;
+    left: -6px;
+    transition: 1.5s ease;
+  }
+  .timeline-innerline {
+    position: absolute;
+    background: var(--brun);
+    width: 4px;
+    height: 0%;
+    top: 0%;
+    left: 0%;
+    transition: 1s linear;
+  }
 
+  @media screen and (min-width: 728px) {
+    .timeline {
+      display: block;
+    }
+    .jul {
+      flex-direction: row;
+    }
+    .jli {
+      margin-top: 0px;
+      position: relative;
+      width: 100%;
+      padding: 0px;
+    }
+    .jli p {
+      transform: translateY(-10px);
+      opacity: 0;
+      padding: 0 20px;
+      transition: 1.5s;
+    }
 
+    .date {
+      opacity: 0;
+      transition: 1.5s;
+      font-size: 12px;
+      position: absolute;
+      top: -60px;
+      left: 38%;
+    }
+
+    .timeline-point {
+      width: 15px;
+      height: 15px;
+      top: -40px;
+      left: 40%;
+      transition: 1.5s ease;
+    }
+
+    .timeline-line {
+      width: 100%;
+      height: 4px;
+    }
+
+    .timeline-innerline {
+      position: absolute;
+      background: var(--brun);
+      width: 0%;
+      height: 4px;
+      top: 0%;
+      left: 0%;
+      transition: 1s linear;
+      border-radius: 999px;
+    }
+  }
 
 
 
@@ -402,6 +651,42 @@ nav .fa {
 .active, .dot:hover {
   background-color: #717171;
 }
+/* Galleri */
+
+
+.title {
+  text-align: center;
+  margin-top: 60px;
+}
+.portfolio_slider {
+  margin: 60px auto;
+  max-width: 1200px;
+  border-top: 4px solid var(--rød);
+  border-bottom: 4px solid var(--rød);
+  display: flex;
+}
+.portfolio_slider {
+  flex: 1 1 0;
+  background-color: none;
+}
+
+.inner {
+  padding: 6px;
+}
+
+.inner img {
+  width: auto;
+  height: 150px;
+}
+img:hover {
+  opacity: 0.9;
+}
+
+
+
+
+
+
 
 /* Fading animation */
 .fade {
