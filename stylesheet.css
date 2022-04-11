@@ -38,12 +38,15 @@ h3{
 
 nav {
   display: flex;
+  position: fixed;
   border-radius: 0 0 30px 30px;
   justify-content: space-between;
   background-color: var(--orange);
   width: 80%;
   align-items: flex-start;
-  margin-left: 10%;
+  margin-left: 9.2%;
+  margin-top: 0;
+  z-index: 10;
 }
 
 nav ul {
@@ -224,6 +227,109 @@ nav .fa {
   }
 }
 
+.stephLanding {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  height: 80vh;
+  background: var(--egg);
+  border-radius: 10px;
+  margin-bottom: 2%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.stephIndhold {
+  padding-top: 100px;
+}
+.stephIndhold h1, h2{
+  text-align: left;
+  padding-left: 10%;
+}
+
+body .book {
+    width: 100%;
+    height: 10em;
+    display: flex;
+    perspective: 2790px;
+}
+.book{
+  display: flex;
+  margin-left: 40rem;
+  position: relative;
+  align-items: center;
+
+}
+.front,.back{
+    position: absolute;
+    height: 28em;
+    width: 20.5em;
+    transform-origin: left center;
+    transition: transform .5s ease-in-out , box-shadow .4s ease-in-out;
+    border-radius: 0px 20px 20px 0px;
+}
+.front, .back{
+
+       background: linear-gradient(to right, var(--rød), var(--brun));
+}
+span{
+  background: #f7f9fc;
+  position: absolute;
+    height: 28em;
+    width: 20em;
+    transform-origin: left center;
+    transition: transform .5s ease-in-out , box-shadow .4s ease-in-out;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.book:hover .front{
+    transform: rotateY(-145deg);
+      box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+.book:hover .fpage{
+  transform: rotateY(-125deg);
+      box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
+  z-index:1;
+}
+.book:hover .spage{
+  transform: rotateY(-115deg);
+      box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
+  z-index:1;
+}
+.book:hover .spage p {
+  transform: rotateY(175deg);
+  font-size: 35px;
+  font-weight: 600;
+  color: var(--sort);
+  padding-left: 50px;
+}
+.book:hover .gpage{
+  transform: rotateY(-135deg);
+
+     box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
+}
+.book:hover .mpage{
+  transform: rotateY(-60deg);
+     box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
+}
+.book:hover .tpage{
+    transform: rotateY(-40deg) ;
+      box-shadow: 0  0 1em 0  rgba(0, 0, 0, .2);
+
+}
+.book:hover .epage{
+    transform: rotateY(-50deg);
+      box-shadow: 0 0 1em 0 rgba(0, 0, 0, .2);
+}
+
+
+.book:hover .back{
+    transform: rotateY(-30deg);
+      box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  z-index:-1;
+}
+
+
+
 .row {
   margin-top: 5%;
   display: flex;
@@ -232,7 +338,7 @@ nav .fa {
 
 .course-col {
   flex-basis: 30%;
-  height: 500px;
+  height: 60vh;
   background: var(--egg);
   border-radius: 10px;
   margin-bottom: 2%;
@@ -263,103 +369,141 @@ nav .fa {
   font-weight: 400;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Jeanett */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Caro */
-.centerImage
-{
- text-align:center;
- display:block;
-}
-
-.button  {
-  background-color: var(--brun);
-  align-items: center;
-  color: #eee;
-  padding: 15px 25px;
-  border: none;
-  border-radius: 12px;
-  width: auto;
+.stephGalleri {
+  box-sizing: border-box;
 }
 
 
-.button :hover {
-   background-color: var(--orange);
-   width: auto;
+body {
+    background: #3206FF;
+    background: linear-gradient(45deg, #3206FF, #F9839B);
+    min-height: 100vh;
 }
 
-.carousel-container {
-  width: 60%;
-  margin: auto;
-  overflow: hidden;
-position: relative;
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 10px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.slider__slides {
+  width: 100%;
+  padding-top: 66%;
+}
+
+.slider__slide {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: lemonchiffon;
+    transition: 1s;
+    opacity: 0;
+}
+
+.slider__slide.active {
+    opacity: 1;
+}
+
+.slider__slide img {
+  width: 100%;
+}
+
+.slider__nav-button {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: #333;
+    opacity: .8;
+    cursor: pointer;
+}
+
+#nav-button--prev {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#nav-button--next {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+#nav-button--prev::after,
+#nav-button--next::after {
+    content: "";
+    position: absolute;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 3px;
+    width: 40%;
+    height: 40%;
+}
+
+#nav-button--next::after{
+    top: 50%;
+    right: 50%;
+    transform: translate(25%, -50%) rotate(-45deg);
+}
+
+#nav-button--prev::after {
+    top: 50%;
+    right: 50%;
+    transform: translate(75%, -50%) rotate(135deg);
+}
+
+.slider__nav {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.slider__navlink {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px #fff solid;
+    background-color: #333;
+    opacity: 1;
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+}
+
+.slider__navlink.active {
+    background-color: #fff;
+    border: 1px #333 solid;
+}
+
+@media screen and (max-width: 640px) {
+  .slider__nav-button {
+    height: 40px;
+    width: 40px;
   }
-
-.carousel-slide {
-  display: flex;
-width: 100%;
-height: 500px;
-
-}
-
-#prevbutton{
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  left: 5%;
-  font-size: 30px;
-  color: white;
-  cursor: pointer;
-
-}
-
-#nextbutton{
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  right: 5%;
-  font-size: 30px;
-  color: white;
-  cursor: pointer;
-
+  .slider__navlink {
+    height: 12px;
+    width: 12px;
+  }
 }
 
 
