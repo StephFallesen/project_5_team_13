@@ -38,12 +38,15 @@ h3{
 
 nav {
   display: flex;
+  position: fixed;
   border-radius: 0 0 30px 30px;
   justify-content: space-between;
   background-color: var(--orange);
   width: 80%;
   align-items: flex-start;
-  margin-left: 10%;
+  margin-left: 9.2%;
+  margin-top: 0;
+  z-index: 10;
 }
 
 nav ul {
@@ -223,6 +226,112 @@ nav .fa {
     line-height: 40px;
   }
 }
+/* Landing */
+
+.stephLanding {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  height: 80vh;
+  background: var(--egg);
+  border-radius: 10px;
+  margin-bottom: 2%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.stephIndhold {
+  padding-top: 100px;
+}
+.stephIndhold h1, h2{
+  text-align: left;
+  padding-left: 10%;
+}
+
+/* Bog */
+
+body .book {
+    width: 100%;
+    height: 10em;
+    display: flex;
+    perspective: 2790px;
+}
+.book{
+  display: flex;
+  margin-left: 40rem;
+  position: relative;
+  align-items: center;
+
+}
+.front,.back{
+    position: absolute;
+    height: 28em;
+    width: 20.5em;
+    transform-origin: left center;
+    transition: transform .5s ease-in-out , box-shadow .4s ease-in-out;
+    border-radius: 0px 20px 20px 0px;
+}
+.front, .back{
+
+       background: linear-gradient(to right, var(--rød), var(--brun));
+}
+span{
+  background: #f7f9fc;
+  position: absolute;
+    height: 28em;
+    width: 20em;
+    transform-origin: left center;
+    transition: transform .5s ease-in-out , box-shadow .4s ease-in-out;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.book:hover .front{
+    transform: rotateY(-145deg);
+      box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+}
+.book:hover .fpage{
+  transform: rotateY(-125deg);
+      box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
+  z-index:1;
+}
+.book:hover .spage{
+  transform: rotateY(-115deg);
+      box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
+  z-index:1;
+}
+.book:hover .spage p {
+  transform: rotateY(175deg);
+  font-size: 35px;
+  font-weight: 600;
+  color: var(--sort);
+  padding-left: 50px;
+}
+.book:hover .gpage{
+  transform: rotateY(-135deg);
+
+     box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
+}
+.book:hover .mpage{
+  transform: rotateY(-60deg);
+     box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
+}
+.book:hover .tpage{
+    transform: rotateY(-40deg) ;
+      box-shadow: 0  0 1em 0  rgba(0, 0, 0, .2);
+
+}
+.book:hover .epage{
+    transform: rotateY(-50deg);
+      box-shadow: 0 0 1em 0 rgba(0, 0, 0, .2);
+}
+
+
+.book:hover .back{
+    transform: rotateY(-30deg);
+      box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  z-index:-1;
+}
+
+/* 3 bokse */
 
 .row {
   margin-top: 5%;
@@ -232,7 +341,7 @@ nav .fa {
 
 .course-col {
   flex-basis: 30%;
-  height: 500px;
+  height: 60vh;
   background: var(--egg);
   border-radius: 10px;
   margin-bottom: 2%;
@@ -514,6 +623,7 @@ height: 500px;
   cursor: pointer;
 
 }
+/* Galleri */
 
 
 
