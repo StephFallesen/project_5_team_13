@@ -375,6 +375,41 @@ span{
 /* Galleri */
 
 
+.title {
+  text-align: center;
+  margin-top: 60px;
+}
+.portfolio_slider {
+  margin: 60px auto;
+  max-width: 1200px;
+  border-top: 4px solid var(--rød);
+  border-bottom: 4px solid var(--rød);
+  display: flex;
+}
+.portfolio_slider {
+  flex: 1 1 0;
+  background-color: none;
+}
+
+.inner {
+  padding: 6px;
+}
+
+.inner img {
+  width: auto;
+  height: 150px;
+}
+img:hover {
+  opacity: 0.9;
+}
+
+
+
+
+
+
+
+
 
 
 
