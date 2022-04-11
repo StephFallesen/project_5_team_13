@@ -260,20 +260,17 @@ nav .fa {
 .stephLanding {
   width: 80%;
   margin: auto;
-  padding-top: 100px;
-  height: 80vh;
+  height: 100vh;
   background: var(--egg);
   border-radius: 10px;
   margin-bottom: 2%;
-  padding: 20px;
   box-sizing: border-box;
 }
 .stephIndhold {
   padding-top: 100px;
 }
 .stephIndhold h1, h2{
-  text-align: left;
-  padding-left: 10%;
+  text-align: center;
 }
 
 /* Bog */
@@ -282,18 +279,20 @@ body .book {
     width: 100%;
     height: 10em;
     display: flex;
-    perspective: 2790px;
+    perspective: 3000px;
 }
 .book{
   display: flex;
-  margin-left: 40rem;
+  /* margin-left: 40rem; */
   position: relative;
   align-items: center;
+  margin-top: 200px;
+  justify-content: center;
 
 }
 .front,.back{
-  background-color: var(--egg);
   background-image: url(img/book.png);
+  background-color: var(--egg);
   position: absolute;
   height: 450px;
   width: 350px;
@@ -305,11 +304,11 @@ body .book {
 span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
   background: #f7f9fc;
   position: absolute;
-    height: 28em;
-    width: 20em;
-    transform-origin: left center;
-    transition: transform .5s ease-in-out , box-shadow .4s ease-in-out;
-    border-radius: 0px 20px 20px 0px;
+  height: 450px;
+  width: 350px;
+  transform-origin: left center;
+  transition: transform .5s ease-in-out , box-shadow .4s ease-in-out;
+  border-radius: 0px 20px 20px 0px;
 }
 
 .book:hover .front{
