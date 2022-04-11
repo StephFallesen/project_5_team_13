@@ -300,8 +300,8 @@ body .book {
     border-radius: 0px 20px 20px 0px;
 }
 .front, .back{
-
-       background: linear-gradient(to right, var(--rød), var(--brun));
+  background-image: url(img/book.jpg);
+  /* background: linear-gradient(to right, var(--rød), var(--brun)); */
 }
 span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
   background: #f7f9fc;
