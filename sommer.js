@@ -1,43 +1,28 @@
-const carouselSlide = document.querySelector('.carousel-slide');
-const carouselImage = document.querySelectorAll('.carousel-slide img');
+let slideIndex = 1;
+showSlides(slideIndex);
 
-//buttons
-const prevbutton = document.querySelector('#prevbutton');
-const nextbutton = document.querySelector('#nextbutton');
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-//counter
-let counter = 1;
-const size = carouselImage[0].clientwidth;
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
-//button listeners
-
-nextbutton.addEventlistener('click',()=>{
-  if(counter >= carouselImage.length -1) return
-  carouselSlide.style.transition = "transform 0.4s ease-in-out"
-  counter++;
-  carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
-});
-
-prevbutton.addEventlistener('click',()=>{
-  if(counter <= 0) return;
-  carouselSlide.style.transition = "transform 0.4s ease-in-out"
-  counter--;
-  carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-
-});
-
-carouselSlide.addEventlistener('transitionend', ()=>{
-  if(carouselImage[counter].id ==='lastclone'){
-    carouselSlide.style.transition = 'none';
-    counter = carouselImage.length -2;
-    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
-  if(carouselImage[counter].id ==='firstclone'){
-    carouselSlide.style.transition = 'none';
-    counter = carouselImage.length - counter;
-    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
   }
-  });
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
