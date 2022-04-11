@@ -38,7 +38,7 @@ h3{
 
 nav {
   display: flex;
-  position: fixed;
+  position: inherit;
   border-radius: 0 0 30px 30px;
   justify-content: space-between;
   background-color: var(--orange);
@@ -406,6 +406,7 @@ span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
     justify-content: flex-start;
     align-items: normal;
     align-content: stretch;
+    /* margin: 150px 0 150px 0; */
   }
 
   .jflex-items1:nth-child(1) {
