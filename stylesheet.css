@@ -429,16 +429,7 @@ span{
 
 
 /* TIMELINE */
-  *,
-  *::before,
-  *::after {
-    margin: 0;
-    padding: 0;
-  }
 
-  section {
-    margin: 20px 0;
-  }
   .timeline {
     margin-top: 35px;
     padding: 15px;
