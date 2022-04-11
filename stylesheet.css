@@ -98,6 +98,9 @@ nav .fa {
 
 @media only screen and (min-width : 425px) and (max-width: 480px){
   html, body {overflow-x: hidden;}
+  nav {
+    background-color: var(--hvid);
+  }
   .nav-links ul li {
     display: block;
   }
@@ -136,11 +139,19 @@ nav .fa {
     font-size: 12px;
     line-height: 40px;
   }
+  .row {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "col1 col2 col3";
+    grid-gap: 20px;
+  }
 }
 
 @media only screen and (min-width : 300px) and (max-width: 424px){
   html, body {overflow-x: hidden;}
-
+  nav {
+    background-color: var(--hvid);
+  }
   .nav-links ul li {
     display: block;
   }
@@ -180,9 +191,18 @@ nav .fa {
     font-size: 16px;
     line-height: 40px;
   }
+  .row {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "col1 col2 col3";
+    grid-gap: 20px;
+  }
 }
 @media only screen and (min-width : 425px) and (max-width: 1090px){
   html, body {overflow-x: hidden;}
+  nav {
+    background-color: var(--hvid);
+  }
 
   .nav-links ul li {
     display: block;
@@ -224,6 +244,15 @@ nav .fa {
     text-decoration: none;
     font-size: 15px;
     line-height: 40px;
+  }
+  .row {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "col1"
+    "col2"
+    "col3";
+    grid-gap: 20px;
   }
 }
 /* Landing */
@@ -332,25 +361,6 @@ span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
 }
 
 /* 3 bokse */
-
-.row {
-  margin-top: 5%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.course-col {
-  flex-basis: 30%;
-  height: 60vh;
-  background: var(--egg);
-  border-radius: 10px;
-  margin-bottom: 2%;
-  padding: 20px;
-  box-sizing: border-box;
-  transition: 1s;
-  line-height: 30px;
-  text-align: left;
-}
 .course {
   width: 80%;
   margin: auto;
@@ -358,13 +368,58 @@ span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
   padding-top: 75px;
 }
 
+.row {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "col1 col2 col3";
+  grid-gap: 20px;
+}
+
+.course-col1 {
+  grid-area: col1;
+  height: 500px;
+  background: var(--egg);
+  border-radius: 10px;
+  margin-bottom: 2%;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 1s;
+  line-height: 25px;
+  text-align: left;
+}
+.course-col2 {
+  grid-area: col2;
+  height: 500px;
+  background: var(--egg);
+  border-radius: 10px;
+  margin-bottom: 2%;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 1s;
+  line-height: 25px;
+  text-align: left;
+}
+.course-col3 {
+  grid-area: col3;
+  height: 100%;
+  background: var(--egg);
+  border-radius: 10px;
+  margin-bottom: 2%;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 1s;
+  line-height: 25px;
+  text-align: left;
+}
+
 #stephCTA {
   background-color: var(--brun);
+  display: grid;
+  align-items: center;
   width: 200px;
   height: 50px;
-  flex-grow: 1;
   cursor: pointer;
-  margin: 15%;
   border-radius: 15px;
   border-width: 0;
   font-size: 22px;
