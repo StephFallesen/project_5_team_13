@@ -505,7 +505,7 @@ span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
     .jli {
       margin-top: 0px;
       position: relative;
-      width: 100%;
+      /* width: 100%; */
       padding: 0px;
     }
     .jli p {
