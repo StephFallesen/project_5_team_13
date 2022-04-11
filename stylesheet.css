@@ -292,17 +292,16 @@ body .book {
 
 }
 .front,.back{
-    position: absolute;
-    height: 28em;
-    width: 20.5em;
-    transform-origin: left center;
-    transition: transform .5s ease-in-out , box-shadow .4s ease-in-out;
-    border-radius: 0px 20px 20px 0px;
+  background-color: var(--egg);
+  background-image: url(img/book.png);
+  position: absolute;
+  height: 450px;
+  width: 350px;
+  transform-origin: left center;
+  transition: transform .5s ease-in-out , box-shadow .4s ease-in-out;
+  border-radius: 0px 20px 20px 0px;
 }
-.front, .back{
-  background-image: url(img/book.jpg);
-  /* background: linear-gradient(to right, var(--rød), var(--brun)); */
-}
+
 span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
   background: #f7f9fc;
   position: absolute;
