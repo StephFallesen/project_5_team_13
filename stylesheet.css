@@ -807,7 +807,7 @@ span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+  display: none; 
 }
 
 /* Next & previous buttons */
