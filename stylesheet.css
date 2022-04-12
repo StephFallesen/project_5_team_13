@@ -490,7 +490,17 @@ span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
   justify-content: center;
 }
 
-@media screen and (min-width: ) {
+@media screen and (min-width: 375px) and (max-width:491px)  {
+.course-col {
+  flex-basis: auto;
+  }
+}
+
+@media screen and (min-width: 492px) and (max-width:575px) {
+
+}
+
+@media screen and (min-width: 576px) and (max-width:1090px) {
 
 }
 
@@ -807,7 +817,7 @@ span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
 
 /* Hide the images by default */
 .mySlides {
-  display: none; 
+  display: none;
 }
 
 /* Next & previous buttons */
