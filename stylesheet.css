@@ -412,8 +412,8 @@ span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
 }
 
 #stephCTA {
+  align-items: center;
   background-color: var(--brun);
-  display: grid;
   align-items: center;
   width: 200px;
   height: 50px;
@@ -423,8 +423,12 @@ span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
   font-size: 22px;
   color: var(--hvid);
   font-weight: 400;
+  justify-content: center;
 }
 
+@media screen and (min-width: ) {
+
+}
 
 
 
