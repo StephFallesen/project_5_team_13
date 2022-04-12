@@ -608,7 +608,7 @@ input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:act
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    align-items: normal;
+    align-items: center;
     align-content: stretch;
    
   }
@@ -800,13 +800,24 @@ input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:act
   }
 
 
-  .jbillederbunden {
+  .jbillederbunden1 {
     height: 106px;
     width: 81px;
     margin-left: 13px;
     margin-bottom: -75px;
   }
-
+  .jbillederbunden2 {
+    height: 166px;
+    width: 111px;
+    margin-left: 13px;
+    margin-bottom: -75px;
+  }
+  .jbillederbunden3 {
+    height: 234px;
+    width: 181px;
+    margin-left: 13px;
+    margin-bottom: -75px;
+}
   @media screen and (min-width: 728px) {
     .timeline {
       display: block;
