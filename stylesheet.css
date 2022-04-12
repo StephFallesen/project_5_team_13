@@ -4,7 +4,7 @@ html {
 
 :root {
   --hvid: #ffffff;
-  --grå: #2e2e2e;
+  --grå: #ADA396;
   --rød: #c35146;
   --brun: #d7924f;
   --orange: #de956a;
@@ -452,15 +452,16 @@ span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
 .course {
   width: 80%;
   margin: auto;
-  text-align: center;
   padding-top: 75px;
+}
+.course h1, h3 {
+  text-align: center;
 }
 
 .row {
   margin-top: 5%;
   display: flex;
   justify-content: space-between;
-  /* flex-direction: column; */
   flex-wrap: wrap;
 }
 
@@ -473,11 +474,10 @@ span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
   box-sizing: border-box;
 }
 
-
 #stephCTA {
   align-items: center;
   background-color: var(--brun);
-  display: grid;
+  display: flex;
   align-items: center;
   width: 200px;
   height: 50px;
@@ -488,23 +488,87 @@ span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
   color: var(--hvid);
   font-weight: 400;
   justify-content: center;
+  position: relative;
+  margin: auto;
 }
 
-@media screen and (min-width: 375px) and (max-width:491px)  {
-.course-col {
-  flex-basis: auto;
+@media screen and (min-width: 375px) and (max-width:900px) {
+  .course-col {
+    flex-basis: auto;
+    }
+  .row {
+    flex-direction: column;
   }
 }
 
-@media screen and (min-width: 492px) and (max-width:575px) {
-
+/* Nyhedsbrev */
+.newsletter-box {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  background-color: var(--grå);
+  text-align: center;
+  padding: 60px;
+  border-radius: 40px;
+  margin: auto;
 }
 
-@media screen and (min-width: 576px) and (max-width:1090px) {
-
+#newsletter{
+  position: relative;
+  z-index:2;
+}
+#newsletter h1{
+  color: var(--hvid);
+  margin-bottom:5px;
+}
+#newsletter p{
+  color: var(--hvid);
+  margin-top:10px;
+  font-weight:300;
+}
+.inline-form{
+  margin:30px 0 0;
+}
+.inline-form input{
+  display:inline-block;
+  border:none;
+  outline:none;
+  margin:5px 4px;
+  font-size:14px;
+  max-width:100%;
+  padding:12px 20px;
+  border-radius:30px;
 }
 
+input[type="email"]{
+  width:250px;
+}
+input[type="submit"]{
+  cursor: pointer;
+  background: var(--beige);
+  width:180px;
+  color: var(--sort);
+  text-align:center;
+  font-weight:400;
+}
 
+input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
+  background: var(--egg);
+}
+
+@media (max-width: 728px) {
+  .newsletter-box{
+    padding:80px 20px;
+  }
+  input[type="text"],
+  input[type="email"]{
+    width:210px;
+  }
+  input[type="submit"]{
+    width:250px;
+  }
+}
 
 
 
@@ -813,6 +877,7 @@ span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
   max-width: 1000px;
   position: relative;
   margin: auto;
+  width: 80%;
 }
 
 /* Hide the images by default */
@@ -951,8 +1016,9 @@ img:hover {
 
 footer {
   display: grid;
+  margin-top: 70px;
   padding-top: 40px;
-  background-color: var(--beige);
+  background-color: var(--orange);
   font-family:"Proxima Nova Alt", Sans-serif;
   color: var(--sort);
   text-align: left;
