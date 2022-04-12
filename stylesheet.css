@@ -678,20 +678,36 @@ span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
 
 
 /* Caro */
-.centerImage
-{
+.centerImage {
  text-align:center;
- display:block;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
 }
 
-.button  {
+.centerImage img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.button {
+  display: flex;
   background-color: var(--brun);
   align-items: center;
-  color: #eee;
+  color: var(--hvid);
   padding: 15px 25px;
   border: none;
-  border-radius: 12px;
-  width: auto;
+  border-radius: 15px;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  font-size: 22px;
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 50px;
 }
 
 
@@ -700,7 +716,7 @@ span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
    width: auto;
 }
 
-* {box-sizing:border-box}
+* .slideshow-container {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
@@ -766,6 +782,10 @@ span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
 }
 
 /* The dots/bullets/indicators */
+.dots {
+  text-align: center;
+  margin-bottom: 50px;
+}
 .dot {
   cursor: pointer;
   height: 15px;
