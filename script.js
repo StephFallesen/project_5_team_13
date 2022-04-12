@@ -1,5 +1,5 @@
 //toggle menu
-var navLinks = document.getElementById("nav-links");
+var navLinks = document.getElementById("navLinks");
 function showMenu() {
   navLinks.style.left = "0";
 }

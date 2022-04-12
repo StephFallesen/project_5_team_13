@@ -106,7 +106,7 @@ nav .fa {
   }
   .nav-links {
     position: absolute;
-    width: 200px;
+    /* width: 200px; */
     top: 0;
     right: -300px;
     text-align: left;
@@ -248,6 +248,10 @@ nav .fa {
 .stephIndhold h1, h2{
   text-align: center;
 }
+.stephIndhold .sInfo {
+  margin-top: 150px;
+  text-align: center;
+}
 
 /* Bog */
 
@@ -259,19 +263,17 @@ body .book {
 }
 .book{
   display: flex;
-  /* margin-left: 40rem; */
   position: relative;
   align-items: center;
   margin-top: 200px;
   justify-content: center;
-
 }
 .front,.back{
-  background-image: url(img/book.png);
   background-color: var(--egg);
+  background-image: linear-gradient(to right, #432616, #80471c);
   position: absolute;
-  height: 450px;
-  width: 350px;
+  height: 360px;
+  width: 240px;
   transform-origin: left center;
   transition: transform .5s ease-in-out , box-shadow .4s ease-in-out;
   border-radius: 0px 20px 20px 0px;
@@ -280,58 +282,170 @@ body .book {
 span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
   background: #f7f9fc;
   position: absolute;
-  height: 450px;
-  width: 350px;
+  height: 360px;
+  width: 240px;
   transform-origin: left center;
   transition: transform .5s ease-in-out , box-shadow .4s ease-in-out;
   border-radius: 0px 20px 20px 0px;
 }
 
+.book:hover {
+  transform: translateX(10%);
+}
 .book:hover .front{
     transform: rotateY(-145deg);
       box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
-}
+    }
 .book:hover .fpage{
   transform: rotateY(-125deg);
-      box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
+  box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
   z-index:1;
 }
 .book:hover .spage{
   transform: rotateY(-115deg);
-      box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
+  box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
   z-index:1;
 }
 .book:hover .spage p {
   transform: rotateY(175deg);
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 600;
   color: var(--sort);
   padding-left: 50px;
 }
 .book:hover .gpage{
   transform: rotateY(-135deg);
-
-     box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
+  box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
 }
 .book:hover .mpage{
   transform: rotateY(-60deg);
-     box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
+  box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
 }
 .book:hover .tpage{
-    transform: rotateY(-40deg) ;
-      box-shadow: 0  0 1em 0  rgba(0, 0, 0, .2);
-
+  transform: rotateY(-40deg) ;
+  box-shadow: 0  0 1em 0  rgba(0, 0, 0, .2);
 }
 .book:hover .epage{
-    transform: rotateY(-50deg);
-      box-shadow: 0 0 1em 0 rgba(0, 0, 0, .2);
+  transform: rotateY(-50deg);
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, .2);
+}
+.book:hover .back{
+  transform: rotateY(-30deg);
+  box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+  z-index:-1;
 }
 
+@media screen and (min-width: 375px) and (max-width:491px)  {
+  .stephIndhold {
+    padding-top: 25px;
+  }
+  .stephIndhold h1 {
+    font-size: 25px;
+  }
+  .stephIndhold h2 {
+    font-size: 15px;
+  }
+  .book{
+    margin-top: 90px;
+    justify-content: center;
+  }
+  .book:hover {
+    transform: translateX(20%);
+  }
+  .front,.back{
+    height: 250px;
+    width: 150px;
+  }
 
-.book:hover .back{
-    transform: rotateY(-30deg);
-      box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
-  z-index:-1;
+  span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
+    height: 250px;
+    width: 150px;
+    transform-origin: left center;
+    transition: transform .5s ease-in-out , box-shadow .4s ease-in-out;
+    border-radius: 0px 20px 20px 0px;
+  }
+  .book:hover .spage p {
+    transform: rotateY(175deg);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--sort);
+    padding-left: 10px;
+  }
+  .sInfo {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 492px) and (max-width:575px) {
+  .stephIndhold {
+    padding-top: 25px;
+  }
+  .stephIndhold h1 {
+    font-size: 25px;
+  }
+  .stephIndhold h2 {
+    font-size: 20px;
+  }
+  .book{
+    margin-top: 120px;
+  }
+  .book:hover {
+    transform: translateX(25%);
+  }
+  .front,.back{
+    height: 330px;
+    width: 190px;
+  }
+
+  span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
+    height: 330px;
+    width: 190px;
+  }
+  .book:hover .spage p {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--sort);
+    padding-left: 10px;
+  }
+  p .sInfo {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width:1090px) {
+  .stephIndhold {
+    padding-top: 25px;
+  }
+  .stephIndhold h1 {
+    font-size: 25px;
+  }
+  .stephIndhold h2 {
+    font-size: 20px;
+  }
+  .book{
+    margin-top: 150px;
+  }
+  .book:hover {
+    transform: translateX(15%);
+  }
+  .front,.back{
+    height: 350px;
+    width: 210px;
+  }
+
+  span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
+    height: 350px;
+    width: 210px;
+  }
+  .book:hover .spage p {
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--sort);
+    padding-left: 10px;
+  }
+  p .sInfo {
+    margin-top: 40px;
+  }
 }
 
 /* 3 bokse */
