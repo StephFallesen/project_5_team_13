@@ -721,7 +721,9 @@ span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
    width: auto;
 }
 
-* .slideshow-container {box-sizing:border-box}
+* .slideshow-container {
+  box-sizing:border-box
+}
 
 /* Slideshow container */
 .slideshow-container {
