@@ -452,7 +452,14 @@ span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
 
 #demo {
   text-align: center;
-
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.stephImg {
+  width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -618,7 +625,7 @@ input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:act
     justify-content: flex-start;
     align-items: center;
     align-content: stretch;
-   
+
   }
 
   .jflex-items1:nth-child(1) {
