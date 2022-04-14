@@ -448,6 +448,14 @@ span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
   }
 }
 
+/* Countdown */
+
+#demo {
+  text-align: center;
+
+}
+
+
 /* 3 bokse */
 .course {
   width: 80%;
