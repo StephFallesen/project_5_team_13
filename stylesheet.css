@@ -602,14 +602,23 @@ input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:act
 
 /* Jeanett */
 
+.jkontakth1 {
+  color: var(--rød);
+  font-weight: 300;
+}
+.jkontakttekst {
+  font-weight: 300;
+  font-size: 15px;
+}
+
 .jflex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    align-items: normal;
+    align-items: center;
     align-content: stretch;
-    /* margin: 150px 0 150px 0; */
+   
   }
 
   .jflex-items1:nth-child(1) {
@@ -644,7 +653,10 @@ input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:act
     font-size: 22px;
     color: var(--hvid);
     font-weight: 400;
+    margin-top: 60px;
   }
+
+
 /* GALLERI */
 .jgrid {
   display: grid;
@@ -680,6 +692,38 @@ input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:act
   width: 228px;
   height: 212px;
 }
+
+
+@media screen and (max-width: 1100px) {
+.jflex-container {
+  flex-direction: column-reverse;
+  }
+.jflex-items2:nth-child(2) {
+  text-align: center
+}
+
+#jkontakt {
+  position: inherit;
+}
+
+.jitem:nth-child(1) {
+  margin-left: 0px;
+}
+
+.jitem:nth-child(2) {
+  margin-left: -90px;
+}
+
+.jitem:nth-child(3) {
+  margin-left: 0px;
+}
+
+.jitem:nth-child(4) {
+  margin-left: -90px;
+}
+
+}
+
 
 
 /* styling code */
@@ -764,12 +808,24 @@ input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:act
   }
 
 
-  .jbillederbunden {
+  .jbillederbunden1 {
     height: 106px;
     width: 81px;
-    margin-left: 238px;
+    margin-left: 13px;
+    margin-bottom: -75px;
   }
-
+  .jbillederbunden2 {
+    height: 166px;
+    width: 111px;
+    margin-left: 13px;
+    margin-bottom: -75px;
+  }
+  .jbillederbunden3 {
+    height: 234px;
+    width: 181px;
+    margin-left: 13px;
+    margin-bottom: -75px;
+}
   @media screen and (min-width: 728px) {
     .timeline {
       display: block;

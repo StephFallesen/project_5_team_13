@@ -7,7 +7,7 @@ let i2 = 1;
 let target1 = document.querySelector(".timeline ul");
 let target2 = document.querySelectorAll(".timeline ul li");
 
-const timeline_events = document.querySelectorAll("ul li");
+const timeline_events = document.querySelectorAll(".timeline ul li");
 
 function showTime(e) {
   e.setAttribute("done", "true");
