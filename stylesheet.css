@@ -1098,9 +1098,28 @@ footer {
 footer img {
   width: 3rem;
 }
-
-
-
+.Prow {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Pcourse-col {
+  flex-basis: 32%;
+  background: var(--egg);
+  border-radius: 10px;
+  margin-bottom: 2%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.Pcourse h1, h3 {
+  text-align: center;
+}
+.Pcourse {
+  width: 80%;
+  margin: auto;
+  padding-top: 75px;
+}
 
 
 /* Ribaz */
