@@ -1089,22 +1089,26 @@ footer {
   display: grid;
   margin-top: 70px;
   padding-top: 40px;
-  background-color: var(--orange);
   font-family:"Proxima Nova Alt", Sans-serif;
   color: var(--sort);
   text-align: left;
   grid-template-columns: auto auto auto;
+  background-color: var(--egg);
 }
 footer img {
   width: 3rem;
 }
+.footercourse h4 { text-align: center;
+color: var(--rød);
+}
+
 .row {
   margin-top: 5%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.Pcourse-col {
+.course-col {
   flex-basis: 32%;
   background: var(--egg);
   border-radius: 10px;
@@ -1112,10 +1116,10 @@ footer img {
   padding: 15px;
   box-sizing: border-box;
 }
-.Pcourse h1, h3 {
+.course h1, h3 {
   text-align: center;
 }
-.Pcourse {
+.course {
   width: 80%;
   margin: auto;
   padding-top: 75px;
