@@ -1098,8 +1098,9 @@ footer {
 footer img {
   width: 3rem;
 }
-.footercourse h4 { text-align: center;
-color: var(--rød);
+.footercourse  { text-align: center;
+color: var(--sort);
+margin-left: 80px;
 }
 
 .row {
