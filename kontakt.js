@@ -1,3 +1,14 @@
+//toggle menu
+var navLinks = document.getElementById("navLinks");
+function showMenu() {
+  navLinks.style.left = "0";
+}
+function hideMenu(){
+  navLinks.style.left = "-300px";
+}
+
+//timeline
+
 console.log("hej")
 
 const line = document.querySelector(".timeline-innerline");
@@ -108,4 +119,3 @@ function resizeEnd() {
   i = 0;
   slowLoop();
 }
-

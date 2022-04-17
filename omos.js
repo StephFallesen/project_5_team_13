@@ -1,3 +1,15 @@
+//toggle menu
+var navLinks = document.getElementById("navLinks");
+function showMenu() {
+  navLinks.style.left = "0";
+}
+function hideMenu(){
+  navLinks.style.left = "-300px";
+}
+
+
+//FAQ
+
 let faq = document.getElementsByClassName("faq-page");
 let i;
 for (i = 0; i < faq.length; i++) {
