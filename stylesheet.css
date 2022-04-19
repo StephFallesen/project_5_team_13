@@ -1233,7 +1233,10 @@ flex-direction: column;
   margin-left: 300px;
   margin-bottom: 70px;
 }
-.styleguideMain h2 h3 {
+.styleguideMain h2 {
+  text-align: left;
+}
+.styleguideMain h3 {
   text-align: left;
 }
 #stephBaggrund {
@@ -1328,6 +1331,9 @@ margin: 0;
   padding: 20px;
   width: 70%;
   margin: 0;
+}
+.styleguideMain .stephLanding h2{
+  text-align: center;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

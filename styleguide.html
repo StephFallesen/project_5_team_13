@@ -60,8 +60,28 @@
   <p>Disse knapper bruges på hjemmesiden, og det vil være en lille beskrivelse under dem alle.</p><br>
   <button type="button" name="stephCTA" id="stephCTA">KNAP</button><br>
   <p>Denne knap bruges som vores primære CTA knap.</p>
-  <p>Dette er koden til knappen:</p>
+  <p>HTML:</p>
   <textarea><button type="button" name="stephCTA" id="stephCTA"> SKRIV KNAP TEKST HER</button></textarea>
+  <p>CSS:</p>
+  <textarea>
+    #stephCTA {
+      align-items: center;
+      background-color: var(--brun);
+      display: flex;
+      align-items: center;
+      width: 200px;
+      height: 50px;
+      cursor: pointer;
+      border-radius: 15px;
+      border-width: 0;
+      font-size: 22px;
+      color: var(--hvid);
+      font-weight: 400;
+      justify-content: center;
+      position: relative;
+      margin: auto;
+    }
+  </textarea>
   <br><br><br>
 
 <p>Nyhedsbrev formular og knap:</p>
@@ -74,8 +94,8 @@
       </form>
     </div>
 </div>
-  <p>Denne knap bruges som vores primære CTA knap.</p>
-  <p>Dette er koden til knappen:</p>
+  <p>Denne knap bruges som CTA knap udelukkende på nyhedsbrevet.</p>
+  <p>HTML:</p>
   <textarea>
     <div class="newsletter-box">
       <div id="newsletter">
@@ -87,8 +107,186 @@
       </div>
     </div>
   </textarea>
-  <br>
+  <p>CSS:</p>
+  <textarea>
+    .newsletter-box {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      width: 80%;
+      background-color: var(--grå);
+      text-align: center;
+      padding: 60px;
+      border-radius: 40px;
+      margin: auto;
+    }
+
+    #newsletter{
+      position: relative;
+      z-index:2;
+    }
+    #newsletter h1{
+      color: var(--hvid);
+      margin-bottom:5px;
+    }
+    #newsletter p{
+      color: var(--hvid);
+      margin-top:10px;
+      font-weight:300;
+    }
+    .inline-form{
+      margin:30px 0 0;
+    }
+    .inline-form input{
+      display:inline-block;
+      border:none;
+      outline:none;
+      margin:5px 4px;
+      font-size:14px;
+      max-width:100%;
+      padding:12px 20px;
+      border-radius:30px;
+    }
+
+    input[type="email"]{
+      width:250px;
+    }
+    input[type="submit"]{
+      cursor: pointer;
+      background: var(--beige);
+      width:180px;
+      color: var(--sort);
+      text-align:center;
+      font-weight:400;
+    }
+
+    input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
+      background: var(--egg);
+    }
+
+    @media (max-width: 728px) {
+      .newsletter-box{
+        padding:80px 20px;
+      }
+      input[type="text"],
+      input[type="email"]{
+        width:210px;
+      }
+      input[type="submit"]{
+        width:250px;
+      }
+    }
+  </textarea>
 </div>
+
+  <div class="styleguideMain">
+    <h1>Anitmationer</h1>
+    <p>Animationen til bogen på den nuværende landing page findes her.</p>
+      <section class="stephLanding">
+        <div class="stephIndhold">
+          <h1>Årets Sommerforestilling:</h1>
+          <h2>Hyrdinden og Skorstensfejeren</h2>
+            <div class="book">
+              <div class="front"></div>
+              <span class="fpage"></span>
+              <span class="spage"><p>Premiere d. 13 juli 2022 kl. 16 <br> <br>Billetsalget starter d. 2 maj 2022</p></span>
+              <span class="gpage"></span>
+              <span class="tpage"></span>
+              <span class="epage"></span>
+              <span class="mpage"></span>
+            <div class="back"></div>
+          </div>
+          <p class="sInfo">Hold musen over bogen</p>
+        </div>
+        </section>
+        <p>HTML:</p>
+        <textarea>
+          <div class="stephIndhold">
+            <h1>Årets Sommerforestilling:</h1>
+            <h2>Hyrdinden og Skorstensfejeren</h2>
+              <div class="book">
+                <div class="front"></div>
+                <span class="fpage"></span>
+                <span class="spage"><p>Premiere d. 13 juli 2022 kl. 16 <br> <br>Billetsalget starter d. 2 maj 2022</p></span>
+                <span class="gpage"></span>
+                <span class="tpage"></span>
+                <span class="epage"></span>
+                <span class="mpage"></span>
+              <div class="back"></div>
+            </div>
+            <p class="sInfo">Hold musen over bogen</p>
+          </div>
+        </textarea>
+        <p>CSS:</p>
+        <textarea>
+          .front,.back{
+            background-color: var(--egg);
+            background-image: linear-gradient(to right, #432616, #80471c);
+            position: absolute;
+            height: 360px;
+            width: 240px;
+            transform-origin: left center;
+            transition: transform .5s ease-in-out , box-shadow .4s ease-in-out;
+            border-radius: 0px 20px 20px 0px;
+          }
+
+          span .front, .fpage, .spage, .gpage, .tpage, .epage, .mpage{
+            background: #f7f9fc;
+            position: absolute;
+            height: 360px;
+            width: 240px;
+            transform-origin: left center;
+            transition: transform .5s ease-in-out , box-shadow .4s ease-in-out;
+            border-radius: 0px 20px 20px 0px;
+          }
+
+          .book:hover {
+            transform: translateX(10%);
+          }
+          .book:hover .front{
+              transform: rotateY(-145deg);
+                box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+              }
+          .book:hover .fpage{
+            transform: rotateY(-125deg);
+            box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
+            z-index:1;
+          }
+          .book:hover .spage{
+            transform: rotateY(-115deg);
+            box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
+            z-index:1;
+          }
+          .book:hover .spage p {
+            transform: rotateY(175deg);
+            font-size: 25px;
+            font-weight: 600;
+            color: var(--sort);
+            padding-left: 50px;
+          }
+          .book:hover .gpage{
+            transform: rotateY(-135deg);
+            box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
+          }
+          .book:hover .mpage{
+            transform: rotateY(-60deg);
+            box-shadow: 0  0 1em  0 rgba(0, 0, 0, .2);
+          }
+          .book:hover .tpage{
+            transform: rotateY(-40deg) ;
+            box-shadow: 0  0 1em 0  rgba(0, 0, 0, .2);
+          }
+          .book:hover .epage{
+            transform: rotateY(-50deg);
+            box-shadow: 0 0 1em 0 rgba(0, 0, 0, .2);
+          }
+          .book:hover .back{
+            transform: rotateY(-30deg);
+            box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+            z-index:-1;
+          }
+        </textarea>
+      </div>
 
   </body>
 </html>
