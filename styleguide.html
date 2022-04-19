@@ -1,70 +1,96 @@
 <!DOCTYPE html>
 <html lang="da" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Styleguide</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <script href="script.js" defer></script>
-  </head>
-  <body>
-    <div id="mySidenav" class="sidenav">
-      <a href="#">Typografi</a>
-      <a href="#">Farver</a>
-      <a href="#">Knapper</a>
-      <a href="#">Animationer</a>
-      <a href="#">Billedestørrelser</a>
-      <a href="#">Tekstbokse</a>
-    </div>
+
+<head>
+  <meta charset="utf-8">
+  <title>Styleguide</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <script href="script.js" defer></script>
+</head>
+
+<body>
+  <div id="mySidenav" class="sidenav">
+    <a href="#">Typografi</a>
+    <a href="#">Farver</a>
+    <a href="#">Knapper</a>
+    <a href="#">Animationer</a>
+    <a href="#">Billedestørrelser</a>
+    <a href="#">Tekstbokse</a>
+  </div>
 
   <div class="styleguideMain">
     <h1>Typografi</h1><br>
     <h1>Hovedoverskrift</h1>
-    <p>Striftstørrelse:  34px <br>Farve:  Root: var(--sort) og HEX: #393939</p>
+    <p>Striftstørrelse: 34px <br>Farve: Root: var(--sort) og HEX: #393939</p>
     <h1 id="stephBaggrund">Dette er et eksempel på en hovedoverskrift, <br>den bruges som overskrift til afsnit.</h1>
     <br>
     <h2>Underoverskrift</h2>
-    <p>Striftstørrelse:  24px <br>Farve: Root: var(--rød) og  HEX: #c35146</p>
+    <p>Striftstørrelse: 24px <br>Farve: Root: var(--rød) og HEX: #c35146</p>
     <h2 id="stephBaggrund">Dette er et eksempel på en underoverskrift, <br>den bruges som underoverskrift i et afsnit.</h2>
     <br>
     <h3>Mindre Underoverskrift</h3>
-    <p>Striftstørrelse:  22px <br>Farve:  Root: var(--sort) og HEX: #393939 <br>Font-weigth: 500</p>
+    <p>Striftstørrelse: 22px <br>Farve: Root: var(--sort) og HEX: #393939 <br>Font-weigth: 500</p>
     <h3 id="stephBaggrund">Dette er et eksempel på lille underoverskrift, der bruges som en mindre underoverskrift.</h3><br>
     <p>Brødtekst</p>
-    <p>Striftstørrelse:  16px <br>Farve:  Root: var(--sort) og HEX: #393939</p>
+    <p>Striftstørrelse: 16px <br>Farve: Root: var(--sort) og HEX: #393939</p>
     <p id="stephBaggrund">Dette er et eksempel på brødtekst, der bruges som generel tekst i afsnit.</p><br>
   </div>
 
   <div class="styleguideMain">
     <h1>Farver</h1>
     <p>Disse farver er vores farvepallette til hjemmesiden og til generelt content.</p><br><br>
-      <div class="farve1"></div>
-      <p>Bruges som skriftfarve på navgationen og knapper.</p><br>
-      <div class="farve2"></div>
-      <p>Bruges som baggrundsfarve på nyhedsbrevets sektion.</p><br>
-      <div class="farve3"></div>
-      <p>Bruges som skriftfarve på underoverskrifter.<br></p><br>
-      <div class="farve4"></div>
-      <p>Bruges til knappernes baggrundsfarve.</p><br>
-      <div class="farve5"></div>
-      <p>Bruges i navigation og footer som baggrundsfarve.</p><br>
-      <div class="farve6"></div>
-      <p>Bruges på nyhedsbrevets knap.</p><br>
-      <div class="farve7"></div>
-      <p>Bruges som tekstfarve i alt brødtekst.</p><br>
-      <div class="farve8"></div>
-      <p>Bruges som baggrundsfarve på alle tekstbokse.</p><br>
+
+    <div class="farve1"></div>
+    <p>HEX: #FFFFFF</p>
+    <p>I kodningen skrives der: var(--hvid);</p>
+    <p>Bruges som skriftfarve på navgationen og knapper.</p><br>
+
+    <div class="farve2"></div>
+    <p>HEX: #ADA396</p>
+    <p>I kodningen skrives der: var(--grå);</p>
+    <p>Bruges som baggrundsfarve på nyhedsbrevets sektion.</p><br>
+
+    <div class="farve3"></div>
+    <p>HEX: #C35146</p>
+    <p>I kodningen skrives der: var(--rød);</p>
+    <p>Bruges som skriftfarve på underoverskrifter.<br></p><br>
+
+    <div class="farve4"></div>
+    <p>HEX: #D7924F</p>
+    <p>I kodningen skrives der: var(--brun);</p>
+    <p>Bruges til knappernes baggrundsfarve.</p><br>
+
+    <div class="farve5"></div>
+    <p>HEX: #DE956A</p>
+    <p>I kodningen skrives der: var(--orange);</p>
+    <p>Bruges i navigation og footer som baggrundsfarve.</p><br>
+
+    <div class="farve6"></div>
+    <p>HEX: #F6CD97</p>
+    <p>I kodningen skrives der: var(--beige);</p>
+    <p>Bruges på nyhedsbrevets knap.</p><br>
+
+    <div class="farve7"></div>
+    <p>HEX: #393939</p>
+    <p>I kodningen skrives der: var(--sort);</p>
+    <p>Bruges som tekstfarve i alt brødtekst.</p><br>
+
+    <div class="farve8"></div>
+    <p>HEX: #FFEDD5</p>
+    <p>I kodningen skrives der: var(--egg);</p>
+    <p>Bruges som baggrundsfarve på alle tekstbokse.</p><br>
   </div>
 
-<div class="styleguideMain">
-  <h1>Knapper</h1>
-  <p>Disse knapper bruges på hjemmesiden, og det vil være en lille beskrivelse under dem alle.</p>
-  <br><br>
-  <button type="button" name="stephCTA" id="stephCTA">KNAP</button><br>
-  <p>Denne knap bruges som vores primære CTA knap.</p>
-  <p>HTML:</p>
-  <textarea><button type="button" name="stephCTA" id="stephCTA"> SKRIV KNAP TEKST HER</button></textarea>
-  <p>CSS:</p>
-  <textarea>
+  <div class="styleguideMain">
+    <h1>Knapper</h1>
+    <p>Disse knapper bruges på hjemmesiden, og det vil være en lille beskrivelse under dem alle.</p>
+    <br><br>
+    <button type="button" name="stephCTA" id="stephCTA">KNAP</button><br>
+    <p>Denne knap bruges som vores primære CTA knap.</p>
+    <p>HTML:</p>
+    <textarea><button type="button" name="stephCTA" id="stephCTA"> SKRIV KNAP TEKST HER</button></textarea>
+    <p>CSS:</p>
+    <textarea>
     #stephCTA {
       align-items: center;
       background-color: var(--brun);
@@ -83,21 +109,21 @@
       margin: auto;
     }
   </textarea>
-  <br><br><br>
+    <br><br><br>
 
-<p>Nyhedsbrev formular og knap:</p>
-  <div class="newsletter-box">
-    <div id="newsletter">
-      <form action="/" class="inline-form">
-      <input type="text" name="myname" id="myname" placeholder="Dit Navn" required />
-      <input type="email" name="email" id="email" placeholder="Email" required />
-      <input type="submit" value="Tilmeld">
-      </form>
+    <h3>Nyhedsbrev formular og knap:</h3>
+    <div class="newsletter-box">
+      <div id="newsletter">
+        <form action="/" class="inline-form">
+          <input type="text" name="myname" id="myname" placeholder="Dit Navn" required />
+          <input type="email" name="email" id="email" placeholder="Email" required />
+          <input type="submit" value="Tilmeld">
+        </form>
+      </div>
     </div>
-</div>
-  <p>Denne knap bruges som CTA knap udelukkende på nyhedsbrevet.</p>
-  <p>HTML:</p>
-  <textarea>
+    <p>Denne knap bruges som CTA knap udelukkende på nyhedsbrevet.</p>
+    <p>HTML:</p>
+    <textarea>
     <div class="newsletter-box">
       <div id="newsletter">
         <form action="/" class="inline-form">
@@ -108,8 +134,8 @@
       </div>
     </div>
   </textarea>
-  <p>CSS:</p>
-  <textarea>
+    <p>CSS:</p>
+    <textarea>
     .newsletter-box {
       display: flex;
       justify-content: center;
@@ -178,30 +204,32 @@
       }
     }
   </textarea>
-</div>
+  </div>
 
   <div class="styleguideMain">
     <h1>Anitmationer</h1>
-    <p>Animationen til bogen på den nuværende landing page findes her.</p>
-      <section class="stephLanding">
-        <div class="stephIndhold">
-          <h1>Årets Sommerforestilling:</h1>
-          <h2>Hyrdinden og Skorstensfejeren</h2>
-            <div class="book">
-              <div class="front"></div>
-              <span class="fpage"></span>
-              <span class="spage"><p>Premiere d. 13 juli 2022 kl. 16 <br> <br>Billetsalget starter d. 2 maj 2022</p></span>
-              <span class="gpage"></span>
-              <span class="tpage"></span>
-              <span class="epage"></span>
-              <span class="mpage"></span>
-            <div class="back"></div>
-          </div>
-          <p class="sInfo">Hold musen over bogen</p>
+    <h3>Animationen til bogen:</h3>
+    <section class="stephLanding">
+      <div class="stephIndhold">
+        <h1>Årets Sommerforestilling:</h1>
+        <h2>Hyrdinden og Skorstensfejeren</h2>
+        <div class="book">
+          <div class="front"></div>
+          <span class="fpage"></span>
+          <span class="spage">
+            <p>Premiere d. 13 juli 2022 kl. 16 <br> <br>Billetsalget starter d. 2 maj 2022</p>
+          </span>
+          <span class="gpage"></span>
+          <span class="tpage"></span>
+          <span class="epage"></span>
+          <span class="mpage"></span>
+          <div class="back"></div>
         </div>
-        </section>
-        <p>HTML:</p>
-        <textarea>
+        <p class="sInfo">Hold musen over bogen</p>
+      </div>
+    </section>
+    <p>HTML:</p>
+    <textarea>
           <div class="stephIndhold">
             <h1>Årets Sommerforestilling:</h1>
             <h2>Hyrdinden og Skorstensfejeren</h2>
@@ -218,8 +246,8 @@
             <p class="sInfo">Hold musen over bogen</p>
           </div>
         </textarea>
-        <p>CSS:</p>
-        <textarea>
+    <p>CSS:</p>
+    <textarea>
           .front,.back{
             background-color: var(--egg);
             background-image: linear-gradient(to right, #432616, #80471c);
@@ -287,14 +315,29 @@
             z-index:-1;
           }
         </textarea>
-      </div>
+    <br><br><br>
+    <h3>Herunder finder du animationerne til galleriet:</h3>
+    <p>CSS:</p>
+    <textarea>
+          /* Fading animation */
+          .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+          }
 
-<div class="styleguideMain">
-  <h1>Billedestørrelser</h1>
-  <p>Her vil du finde de forskellige størrelser på billeder, som er brugt.</p>
-  <br><br><br>
-  <section class="slideshow-container">
-    <!-- Slideshow container -->
+          @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+          }
+        </textarea>
+  </div>
+
+  <div class="styleguideMain">
+    <h1>Billedestørrelser</h1>
+    <p>Her vil du finde de forskellige størrelser på billeder, som er brugt.</p>
+    <br><br><br>
+    <section class="slideshow-container">
+      <!-- Slideshow container -->
       <div>
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
@@ -316,18 +359,18 @@
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-    <br>
-    <!-- The dots/circles -->
+      <br>
+      <!-- The dots/circles -->
       <div class="dots">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
       </div>
-  </section>
-  <p>Dette gallri bruges på landing page og på siderne til forestillinger.</p>
-  <br>
-  <p>HTML:</p>
-  <textarea>
+    </section>
+    <p>Dette gallri bruges på landing page og på siderne til forestillinger.</p>
+    <br>
+    <p>HTML:</p>
+    <textarea>
     <section class="slideshow-container">
       <!-- Slideshow container -->
         <div>
@@ -360,8 +403,8 @@
         </div>
     </section>
   </textarea>
-  <p>CSS:</p>
-  <textarea>
+    <p>CSS:</p>
+    <textarea>
     * .slideshow-container {
       box-sizing:border-box
     }
@@ -451,8 +494,8 @@
       to {opacity: 1}
     }
   </textarea>
-  <p>JavaScript</p>
-  <textarea>
+    <p>JavaScript</p>
+    <textarea>
     let slideIndex = 1;
     showSlides(slideIndex);
 
@@ -482,7 +525,8 @@
       dots[slideIndex-1].className += " active";
     }
   </textarea>
-</div>
+  </div>
 
-  </body>
+</body>
+
 </html>
