@@ -1093,7 +1093,7 @@ footer {
   color: var(--sort);
   text-align: left;
   grid-template-columns: auto auto auto;
-  background-color: var(--egg);
+  background-color: var(--orange);
 }
 footer img {
   width: 3rem;
