@@ -1,114 +1,117 @@
 <!DOCTYPE html>
 <html lang="da" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="vinter.js" defer></script>
 
-    <title>Vinterforestilling H.C. Andersen Festspillene</title>
+  <title>Vinterforestilling H.C. Andersen Festspillene</title>
 </head>
+
 <body>
-    <section class="header">
-      <nav>
-        <div class= "nav-links">
-          <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="index.html"><img src="img/logo.png" alt="logo of H.C.Andersens hat"></a></li>
-            <li><a href="sommer.html">Sommerforestilling</a></li>
-            <li><a href="vinter.html">Vinterforestilling</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="omos.html">Om os</a></li>
-            <li><a href="kobbilletter.html">Køb Billetter</a></li>
-          </ul>
+  <section class="header">
+    <nav>
+      <div class="nav-links">
+        <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html"><img src="img/logo.png" alt="logo of H.C.Andersens hat"></a></li>
+          <li><a href="sommer.html">Sommerforestilling</a></li>
+          <li><a href="vinter.html">Vinterforestilling</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="omos.html">Om os</a></li>
+          <li><a href="kobbilletter.html">Køb Billetter</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+    </nav>
+
+    <section class="centerImage">
+      <h1>Vinterforestilling 2020</h1>
+      <img src="img/vinter.jpg" alt="vinter">
+      <button class="button">2020 Januar Pippi</button>
+    </section>
+
+
+    <section class="slideshow-container">
+      <!-- Slideshow container -->
+      <div>
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img/pipi3.jpg" style="width:100%">
         </div>
-          <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
-      </nav>
 
-<section class="centerImage">
-    <h1>Vinterforestilling 2020</h1>
-    <img src="img/vinter.jpg" alt="vinter">
-    <button class="button">2020 Januar Pippi</button>
-</section>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img/pipi2.jpg" style="width:100%">
+        </div>
 
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img/pipi4.jpg" style="width:100%">
+        </div>
 
-<section class="slideshow-container">
-  <!-- Slideshow container -->
-    <div>
-      <!-- Full-width images with number and caption text -->
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="img/pipi3.jpg" style="width:100%">
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="img/pipi2.jpg" style="width:100%">
+      <br>
+      <!-- The dots/circles -->
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
       </div>
+    </section>
 
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="img/pipi4.jpg" style="width:100%">
+
+
+
+    <footer>
+      <div class="row">
+        <div class="footercourse">
+          <a href="#header"><img src="img/logo.png" alt="logo of H.C.Andersens hat"></a>
+          <p>Telefon: 24220956 <br>
+            Email: mail@hcandersenfestspillene.dk
+            <br><br>
+            Kanalvej 154C
+            <br>
+            5000 Odense C
+            <br><br>
+            Læs om vores privatpolitik her
+          </p>
+        </div>
+
+        <div class="footercourse">
+          <h4>HYRINDEN OG SKORSTENSFEJEREN i <br> Den Fynske Landsby, Odense.</h4>
+          Vi spiller fra den 13. juli til den 6. august <br>
+          formiddagsforestilling den 3. august kl. 11.00 <br>
+          Priser: Børn 2-13 år, 75 kr,- <br>
+          Voksne 145,-
+
+          </p>
+        </div>
+
+        <div class="footercourse">
+          <h4>I TILFÆLDE AF AFLYSNING </h4>
+          <p>Skulle det meget sjældne tilfælde opstå, at en forestilling aflyses,<br>
+            så vil gæster samme dag på stedet kunne få <br>
+            udleveret en erstatningsbillet til en anden forestilling. <br>
+            Der udleveres ikke erstatningsbilletter på andre tidspunkter. <br>
+            Der ydes ikke erstatningsbilletter ved forsinkelser.
+          </p>
+        </div>
+
       </div>
+    </footer>
 
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-  <br>
-  <!-- The dots/circles -->
-    <div class="dots">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-</section>
+</body>
 
-
-
-
-<footer>
-  <div class="row">
-    <div class="footercourse">
-      <a href="#header"><img src="img/logo.png" alt="logo of H.C.Andersens hat"></a>
-      <p>Telefon: 24220956 <br>
-        Email: mail@hcandersenfestspillene.dk
-        <br><br>
-        Kanalvej 154C
-        <br>
-        5000 Odense C
-        <br><br>
-        Læs om vores privatpolitik her
-        </p>
-      </div>
-
-  <div class="footercourse">
-    <h4>HYRINDEN OG SKORSTENSFEJEREN i <br> Den Fynske Landsby, Odense.</h4>
-      Vi spiller fra den 13. juli til den 6. august <br>
-      formiddagsforestilling den 3. august kl. 11.00 <br>
-      Priser: Børn 2-13 år, 75 kr,- <br>
-      Voksne 145,-
-
-     </p>
-  </div>
-
-<div class="footercourse">
-<h4>I TILFÆLDE AF AFLYSNING </h4>
-<p>Skulle det meget sjældne tilfælde opstå, at en forestilling aflyses,<br>
-så vil gæster samme dag på stedet kunne få <br>
-udleveret en erstatningsbillet til en anden forestilling. <br>
-Der udleveres ikke erstatningsbilletter på andre tidspunkter. <br>
-Der ydes ikke erstatningsbilletter ved forsinkelser.
-</p>
-</div>
-
-</div>
-</footer>
-
-  </body>
 </html>
