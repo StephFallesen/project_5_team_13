@@ -1233,7 +1233,7 @@ flex-direction: column;
   margin-left: 300px;
   margin-bottom: 70px;
 }
-.styleguideMain h2, h3 {
+.styleguideMain h2 h3 {
   text-align: left;
 }
 #stephBaggrund {
@@ -1316,6 +1316,18 @@ flex-direction: column;
   height: 100px;
   box-shadow: 7px 7px 7px #f2f2f2;
   border: 1px solid #f2f2f2;
+}
+.styleguideMain #stephCTA {
+margin: 0;
+}
+.styleguideMain textarea {
+  width: 45%;
+  height: 100px;
+}
+.styleguideMain .newsletter-box {
+  padding: 20px;
+  width: 70%;
+  margin: 0;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

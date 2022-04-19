@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Styleguide</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <script href="script.js"></script>
+    <script href="script.js" defer></script>
   </head>
   <body>
     <div id="mySidenav" class="sidenav">
@@ -48,13 +48,47 @@
       <div class="farve5"></div>
       <p>Bruges i navigation og footer som baggrundsfarve.</p><br>
       <div class="farve6"></div>
-      <p></p><br>
+      <p>Bruges på nyhedsbrevets knap.</p><br>
       <div class="farve7"></div>
-      <p></p><br>
+      <p>Bruges som tekstfarve i alt brødtekst.</p><br>
       <div class="farve8"></div>
-      <p></p><br>
+      <p>Bruges som baggrundsfarve på alle tekstbokse.</p><br>
   </div>
 
+<div class="styleguideMain">
+  <h1>Knapper</h1>
+  <p>Disse knapper bruges på hjemmesiden, og det vil være en lille beskrivelse under dem alle.</p><br>
+  <button type="button" name="stephCTA" id="stephCTA">KNAP</button><br>
+  <p>Denne knap bruges som vores primære CTA knap.</p>
+  <p>Dette er koden til knappen:</p>
+  <textarea><button type="button" name="stephCTA" id="stephCTA"> SKRIV KNAP TEKST HER</button></textarea>
+  <br><br><br>
+
+<p>Nyhedsbrev formular og knap:</p>
+  <div class="newsletter-box">
+    <div id="newsletter">
+      <form action="/" class="inline-form">
+      <input type="text" name="myname" id="myname" placeholder="Dit Navn" required />
+      <input type="email" name="email" id="email" placeholder="Email" required />
+      <input type="submit" value="Tilmeld">
+      </form>
+    </div>
+</div>
+  <p>Denne knap bruges som vores primære CTA knap.</p>
+  <p>Dette er koden til knappen:</p>
+  <textarea>
+    <div class="newsletter-box">
+      <div id="newsletter">
+        <form action="/" class="inline-form">
+        <input type="text" name="myname" id="myname" placeholder="Dit Navn" required />
+        <input type="email" name="email" id="email" placeholder="Email" required />
+        <input type="submit" value="Tilmeld">
+        </form>
+      </div>
+    </div>
+  </textarea>
+  <br>
+</div>
 
   </body>
 </html>
