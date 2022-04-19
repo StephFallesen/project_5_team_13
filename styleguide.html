@@ -18,6 +18,7 @@
     <a href="#">Tekstbokse</a>
   </div>
 
+  <!-- Typografi -->
   <div class="styleguideMain">
     <h1>Typografi</h1><br>
     <h1>Hovedoverskrift</h1>
@@ -36,6 +37,7 @@
     <p id="stephBaggrund">Dette er et eksempel på brødtekst, der bruges som generel tekst i afsnit.</p><br>
   </div>
 
+  <!-- Farver -->
   <div class="styleguideMain">
     <h1>Farver</h1>
     <p>Disse farver er vores farvepallette til hjemmesiden og til generelt content.</p><br><br>
@@ -81,6 +83,7 @@
     <p>Bruges som baggrundsfarve på alle tekstbokse.</p><br>
   </div>
 
+  <!-- Knapper -->
   <div class="styleguideMain">
     <h1>Knapper</h1>
     <p>Disse knapper bruges på hjemmesiden, og det vil være en lille beskrivelse under dem alle.</p>
@@ -206,6 +209,7 @@
   </textarea>
   </div>
 
+  <!-- Animationer -->
   <div class="styleguideMain">
     <h1>Anitmationer</h1>
     <h3>Animationen til bogen:</h3>
@@ -332,10 +336,13 @@
         </textarea>
   </div>
 
+  <!-- Billedstørrelser -->
   <div class="styleguideMain">
     <h1>Billedestørrelser</h1>
     <p>Her vil du finde de forskellige størrelser på billeder, som er brugt.</p>
-    <br><br><br>
+    <br>
+    <h3>Slide Galleri</h3>
+    <p>Dette gallri bruges på landing page og på siderne til forestillinger.</p>
     <section class="slideshow-container">
       <!-- Slideshow container -->
       <div>
@@ -367,7 +374,6 @@
         <span class="dot" onclick="currentSlide(3)"></span>
       </div>
     </section>
-    <p>Dette gallri bruges på landing page og på siderne til forestillinger.</p>
     <br>
     <p>HTML:</p>
     <textarea>
@@ -525,6 +531,253 @@
       dots[slideIndex-1].className += " active";
     }
   </textarea>
+    <br><br><br>
+    <h3>Billeder på kontakt side</h3>
+    <p>Disse billeder bruge på kontaktsiden og er opstillet to og to.</p>
+    <div class="jflex-items1">
+      <div class="jgrid">
+        <img src="img/hcabillede1.jpg" class="jitem" alt="Billede af H. C. Andersen feststillene">
+        <img src="img/hcabillede2.jpg" class="jitem" alt="Billede af H. C. Andersen feststillene">
+        <img src="img/hcabillede3.jpg" class="jitem" alt="Billede af H. C. Andersen feststillene">
+        <img src="img/hcabillede4.jpg" class="jitem" alt="Billede af H. C. Andersen feststillene">
+      </div>
+    </div>
+    <p>HTML:</p>
+    <textarea>
+    <div class="jflex-items1">
+      <div class="jgrid">
+        <img src="img/hcabillede1.jpg" class="jitem" alt="Billede af H. C. Andersen feststillene">
+        <img src="img/hcabillede2.jpg" class="jitem" alt="Billede af H. C. Andersen feststillene">
+        <img src="img/hcabillede3.jpg" class="jitem" alt="Billede af H. C. Andersen feststillene">
+        <img src="img/hcabillede4.jpg" class="jitem" alt="Billede af H. C. Andersen feststillene">
+    </div>
+    </div>
+  </textarea>
+    <p>CSS:</p>
+    <textarea>
+    .jgrid {
+      margin: 100px;
+      max-width: 100%;
+    }
+    .jgrid > .jitem {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </textarea>
+  </div>
+  <br>
+
+  <!-- Tekstbokse -->
+  <div class="styleguideMain">
+    <h1>Tekstbokse</h1>
+    <p>Her findes de forskellige tekstbokse der er brugt på hjemmesiden.</p>
+    <br>
+    <h3>Informationsboks</h3>
+    <div class="row">
+      <div class="course-col">
+        <h2>Underoverskrift</h2>
+        <p>Informationer skrives her!</p>
+        <button href="omos.html" type="button" name="stephCTA" id="stephCTA">KNAP NAVN</button>
+      </div>
+    </div>
+    <p>HTML:</p>
+    <textarea>
+    <div class="row">
+      <div class="course-col">
+        <h2>Underoverskrift</h2>
+        <p>Informationer skrives her!</p>
+        <button href="omos.html" type="button" name="stephCTA" id="stephCTA">KNAP NAVN</button>
+      </div>
+    </div>
+  </textarea>
+    <p>CSS:</p>
+    <textarea>
+    .course {
+      width: 80%;
+      margin: auto;
+      padding-top: 75px;
+    }
+    .course h1, h3 {
+      text-align: center;
+    }
+    .row {
+      margin-top: 5%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .course-col {
+      flex-basis: 32%;
+      background: var(--egg);
+      border-radius: 10px;
+      margin-bottom: 2%;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+    #stephCTA {
+      align-items: center;
+      background-color: var(--brun);
+      display: flex;
+      align-items: center;
+      width: 200px;
+      height: 50px;
+      cursor: pointer;
+      border-radius: 15px;
+      border-width: 0;
+      font-size: 22px;
+      color: var(--hvid);
+      font-weight: 400;
+      justify-content: center;
+      position: relative;
+      margin: auto;
+    }
+
+    @media screen and (min-width: 375px) and (max-width:900px) {
+      .course-col {
+        flex-basis: auto;
+        }
+      .row {
+        flex-direction: column;
+      }
+    }
+  </textarea>
+  <br><br><br>
+    <h3>FAQ tekstbokse</h3>
+    <h2 class="faq-heading">FAQ'S</h2>
+    <section class="faq-container">
+      <div class="faq-one">
+        <!-- faq question -->
+        <h2 class="faq-page">Hvornår starter billetsalget?</h2>
+        <!-- faq answer -->
+        <div class="faq-body">
+          <p>Billetsalget starter d.02 maj 2022.
+            På forsiden kan du følge vores countdown til billetsalget
+            således at du og familien ikke går glip af en eventyrlig sommer.
+          </p>
+        </div>
+      </div>
+      <hr class="hr-line">
+      <div class="faq-two">
+        <!-- faq question -->
+        <h2 class="faq-page">Hvordan tilmelder jeg mit barn?</h2>
+        <!-- faq answer -->
+        <div class="faq-body">
+          <p>Du kan tilmelde dig og din familie til H.C. Andersenfestspillene
+            via. vores kontaktformular.
+            Du er også meget velkommen til at ringe til os på telefon nummeret: 24220956.
+          </p>
+        </div>
+      </div>
+      <hr class="hr-line">
+      <div class="faq-three">
+        <!-- faq question -->
+        <h2 class="faq-page">Hvordan bliver jeg frivillig?</h2>
+        <!-- faq answer -->
+        <div class="faq-body">
+          <p>Ønsker du og din familie at give en hjælpende hånd? Grib venligst telefonen
+            og ring til nummeret 24220956.
+          </p>
+        </div>
+      </div>
+    </section>
+    <p>HTML:</p>
+    <textarea>
+      <h2 class="faq-heading">FAQ'S</h2>
+      <section class="faq-container">
+        <div class="faq-one">
+          <!-- faq question -->
+          <h2 class="faq-page">Hvornår starter billetsalget?</h2>
+          <!-- faq answer -->
+          <div class="faq-body">
+            <p>Billetsalget starter d.02 maj 2022.
+              På forsiden kan du følge vores countdown til billetsalget
+              således at du og familien ikke går glip af en eventyrlig sommer.
+            </p>
+          </div>
+        </div>
+        <hr class="hr-line">
+        <div class="faq-two">
+          <!-- faq question -->
+          <h2 class="faq-page">Hvordan tilmelder jeg mit barn?</h2>
+          <!-- faq answer -->
+          <div class="faq-body">
+            <p>Du kan tilmelde dig og din familie til H.C. Andersenfestspillene
+              via. vores kontaktformular.
+              Du er også meget velkommen til at ringe til os på telefon nummeret: 24220956.
+            </p>
+          </div>
+        </div>
+        <hr class="hr-line">
+        <div class="faq-three">
+          <!-- faq question -->
+          <h2 class="faq-page">Hvordan bliver jeg frivillig?</h2>
+          <!-- faq answer -->
+          <div class="faq-body">
+            <p>Ønsker du og din familie at give en hjælpende hånd? Grib venligst telefonen
+              og ring til nummeret 24220956.
+            </p>
+          </div>
+        </div>
+      </section>
+    </textarea>
+    <p>CSS:</p>
+    <textarea>
+
+      .faq-heading{
+          padding: 20px 60px;
+      }
+      .faq-container{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      }
+      .hr-line{
+        width: 60%;
+        margin: auto;
+      }
+      /* Style the buttons that are used to open and close the faq-page body */
+      .faq-page {
+          /* background-color: #eee; */
+          color: var(--sort);
+          cursor: pointer;
+          padding: 30px 20px;
+          width: 60%;
+          border: none;
+          outline: none;
+          margin: auto;
+      }
+      .faq-body{
+          margin: auto;
+          /* text-align: center; */
+         width: 50%;
+         padding: auto;
+      }
+      /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+      .active,
+      .faq-page:hover {
+          background-color: #F9F9F9;
+      }
+      /* Style the faq-page panel. Note: hidden by default */
+      .faq-body {
+          padding: 0 18px;
+          background-color: white;
+          display: none;
+          overflow: hidden;
+      }
+      .faq-page:after {
+          content: '\02795';
+          /* Unicode character for "plus" sign (+) */
+
+          font-size: 20px;
+          float: right;
+          margin-left: 5px;
+      }
+      .active:after {
+          content: "\2796";
+          /* Unicode character for "minus" sign (-) */
+      }
+    </textarea>
   </div>
 
 </body>
