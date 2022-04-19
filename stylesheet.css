@@ -18,6 +18,7 @@ html {
 p{
   font-size: 16px;
   font-weight: 300;
+  color: var(--sort);
 }
 
 h1{
@@ -1184,3 +1185,141 @@ flex-direction: column;
 }
 
 /* Ribaz */
+
+
+
+
+
+
+
+
+
+/*Styleguide*/
+
+/* The sidenav */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--orange);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Page content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+}
+/* The navigation menu links */
+.sidenav a {
+  padding: 25px 8px 8px 40px;
+  font-weight: 200;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--hvid);
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: var(--rød);
+}
+
+.styleguideMain {
+  margin-left: 300px;
+  margin-bottom: 70px;
+}
+.styleguideMain h2, h3 {
+  text-align: left;
+}
+#stephBaggrund {
+  background: #f2f2f2;
+  width: 70%;
+  border-radius: 10px;
+  margin-bottom: 2%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.farve1 {
+  color: var(--hvid);
+  border-radius: 20px;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  box-shadow: 7px 7px 7px #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+.farve2 {
+  background-color: var(--grå);
+  border-radius: 20px;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  box-shadow: 7px 7px 7px #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+.farve3 {
+  background-color: var(--rød);
+  border-radius: 20px;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  box-shadow: 7px 7px 7px #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+.farve4 {
+  background-color: var(--brun);
+  border-radius: 20px;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  box-shadow: 7px 7px 7px #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+.farve5 {
+  background-color: var(--orange);
+  border-radius: 20px;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  box-shadow: 7px 7px 7px #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+.farve6 {
+  background-color: var(--beige);
+  border-radius: 20px;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  box-shadow: 7px 7px 7px #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+.farve7 {
+  background-color: var(--sort);
+  border-radius: 20px;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  box-shadow: 7px 7px 7px #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+.farve8 {
+  background-color: var(--egg);
+  border-radius: 20px;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  box-shadow: 7px 7px 7px #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
