@@ -7,7 +7,7 @@ function hideMenu(){
   navLinks.style.left = "-300px";
 }
 
-
+//billedslider
 let slideIndex = 1;
 showSlides(slideIndex);
 
