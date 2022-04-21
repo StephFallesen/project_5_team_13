@@ -1,18 +1,149 @@
 <!DOCTYPE html>
 <html lang="da" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Køb billetter til H.C. Andersen festspillene</title>
-</head>
-<body>
-    <h1>HEJ KONTAKT SIDE</h1>
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="kontakt.js" defer></script>
+  <script src="kobbilletter.js" defer></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Køb billetter</title>
+</head>
+
+<body>
+
+  <section class="header">
+    <nav>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html"><img src="img/logo.png" alt="logo of H.C.Andersens hat"></a></li>
+          <li><a href="sommer.html">Sommerforestilling</a></li>
+          <li><a href="vinter.html">Vinterforestilling</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="omos.html">Om os</a></li>
+          <li><a href="kobbilletter.html">Køb Billetter</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+    </nav>
+  </section>
+
+  <section class="jflex-container">
+    <div class="jflex-items3 card-box">
+      <div>
+          <h2 class="jkontakth1" style="color: black;">H.C. Andersens Venner</h2>
+          <p class="jkontakttekst">
+              I alle vores produktioner arbejder en gruppe frivillige sammen for at fa forestillingerne skabt, kulisserne bygget og eventyret til at opsta.<br><br>
+              Vi er som en stor familie og med HCA Festspillenes Venner kan du blive en del at det. Maske kan du... bygge og male? Lide at mode mange mennesker?<br>
+              Sy? Lave mad? Eller slet ikke fa nok?
+          </p>
+        </div>
+        <div style="margin-bottom: 20px;">
+            <div style="margin-left: 90px;">
+                <button type="button" name="jkontakt" id="jkontakt" style="color: black; ">Tilmeld dig nu</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="jflex-items2 card-box">
+        <div>
+            <h2 class="jkontakth1" style="color: black;">Billet information</h2>
+            <p class="jkontakttekst" >
+              Billetsalget starter d.02 maj 2022!<br><br>
+              Nar vi kommer til denne dato, sa kan du folge linket nederst i denne boks, som derefter vil tage dig direkte videre for at kobe dine billetter til sommerens forstilling.<br><br>
+              Vi ansker dig en eventylig dag!
+          </p>
+        </div>
+        <div style="margin-bottom: 20px;">
+            <div style="margin-left: 90px;">
+                <button type="button" name="jkontakt" id="jkontakt" style="color: black; ">Kobt billetter her</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="jflex-items3 card-box">
+        <div>
+            <h2 class="jkontakth1" style="color: black;">Vores sponsorer</h2>
+            <p class="jkontakttekst">
+              Her finder du listen over vores helt fantasiske sponsorer!<br><br>
+              Uden dem ville vi ikke kunne fremfare sadan en eventyrlig forestilling hvert ar.
+            </p>
+        </div>
+        <br><br>
+        <div style="margin-bottom: 20px;">
+            <div style="margin-left: 90px;">
+                <button type="button" name="jkontakt" id="jkontakt" style="color: black; " onclick="test_alert();">Sponsorer</button>
+            </div>
+        </div>
+    </div>
+
+  </section>
+
+
+  <section class="search-box">
+    <div>
+        <div class="search-box-header">
+            <h1 style="color: black">EVENTYRLIGE NYHEDER</h1><br>
+        </div>
+        <div>
+            <span class="span-text">
+                Indtast din e-mail her :&nbsp;
+                <input type="text" placeholder="    johannes@johannes.ok" name="" class="search-box-window span-text">
+                </input>
+            </span>
+        </div><br>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="row">
+      <div class="footercourse">
+        <a href="#header"><img src="img/logo.png" alt="logo of H.C.Andersens hat"></a>
+        <p>Telefon: 24220956 <br>
+          Email: mail@hcandersenfestspillene.dk
+          <br><br>
+          Kanalvej 154C
+          <br>
+          5000 Odense C
+          <br><br>
+          Læs om vores privatpolitik her
+        </p>
+      </div>
+
+      <div class="footercourse">
+        <h4>HYRINDEN OG SKORSTENSFEJEREN i <br> Den Fynske Landsby, Odense.</h4>
+        Vi spiller fra den 13. juli til den 6. august <br>
+        formiddagsforestilling den 3. august kl. 11.00 <br>
+        Priser: Børn 2-13 år, 75 kr,- <br>
+        Voksne 145,-
+
+        </p>
+      </div>
+
+      <div class="footercourse">
+        <h4>I TILFÆLDE AF AFLYSNING </h4>
+        <p>Skulle det meget sjældne tilfælde opstå, at en forestilling aflyses,<br>
+          så vil gæster samme dag på stedet kunne få <br>
+          udleveret en erstatningsbillet til en anden forestilling. <br>
+          Der udleveres ikke erstatningsbilletter på andre tidspunkter. <br>
+          Der ydes ikke erstatningsbilletter ved forsinkelser.
+        </p>
+      </div>
+
+    </div>
+  </footer>
 </body>
+
 </html>

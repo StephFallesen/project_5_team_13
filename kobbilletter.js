@@ -6,3 +6,7 @@ function showMenu() {
 function hideMenu(){
   navLinks.style.left = "-300px";
 }
+
+function test_alert(){
+  alert("Sponsorer button is clicked!");
+}
