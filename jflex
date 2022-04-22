@@ -691,6 +691,7 @@ input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:act
   margin-bottom: 2%;
   padding: 47px;
   margin-top: 45px;
+  width: 80%; 
 }
 .jflex-items2:nth-child(2) {
   display: block;
@@ -700,6 +701,7 @@ input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:act
   margin-bottom: 2%;
   padding: 47px;
   margin-top: 45px;
+  width: 80%; 
 }
 .jflex-items3:nth-child(3) {
   display: block;
@@ -709,6 +711,7 @@ input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:act
   margin-bottom: 2%;
   padding: 47px;
   margin-top: 45px;
+  width: 80%; 
 }
 
 #jkontakt {
