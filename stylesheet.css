@@ -683,7 +683,7 @@ input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:act
   width: 50%;
 }
 
-.jflex-items1:nth-child(1) {
+.jflex-items5:nth-child(1) {
   display: block;
   height: 100%;
   background: var(--egg);
@@ -693,7 +693,7 @@ input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:act
   margin-top: 45px;
   width: 80%; 
 }
-.jflex-items2:nth-child(2) {
+.jflex-items6:nth-child(2) {
   display: block;
   height: 100%;
   background: var(--egg);
@@ -702,7 +702,7 @@ input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:act
   padding: 47px;
   margin-top: 45px;
 }
-.jflex-items3:nth-child(3) {
+.jflex-items7:nth-child(3) {
   display: block;
   height: 100%;
   background: var(--egg);
