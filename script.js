@@ -1,5 +1,5 @@
 //toggle menu
-var navLinks = document.getElementById("navLinks");
+let navLinks = document.getElementById("navLinks");
 function showMenu() {
   navLinks.style.left = "0";
 }
@@ -27,6 +27,8 @@ function showSlides(n) {
   let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
+  
+  // Loop nedenfor
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -60,7 +62,7 @@ let x = setInterval(function() {
   document.getElementById("demo").innerHTML = days + " dage : " + hours + " timer : "
   + minutes + " minutter : " + seconds + " sekunder";
 
-  // If the count down is finished, write some text
+  // Kontrolstruktur hvis countdown er nået den ønskede dato:
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "BILLETSALGET ER STARTET!";
