@@ -655,6 +655,14 @@ input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:act
 }
 
 /* Jeanett */
+.jflex-items2 {
+  margin-top: 50px;
+  background: var(--egg);
+  border-radius: 10px;
+  margin-bottom: 2%;
+  padding: 15px;
+  box-sizing: border-box;
+}
 .jkontakth1 {
   color: var(--rød);
 }
@@ -691,7 +699,7 @@ input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:act
   margin-bottom: 2%;
   padding: 47px;
   margin-top: 45px;
-  width: 80%; 
+  width: 80%;
 }
 .jflex-items6:nth-child(2) {
   display: block;
@@ -710,7 +718,7 @@ input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:act
   margin-bottom: 2%;
   padding: 47px;
   margin-top: 45px;
-  width: 80%; 
+  width: 80%;
 }
 
 #jkontakt {
